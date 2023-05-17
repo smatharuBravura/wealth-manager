@@ -38,7 +38,29 @@
     text-overflow: ellipsis;
   }
 }
+.transaction-table{
+  width:100%;
+sup{display:block; line-height:1;padding:2px 8px; top:0; }
+td{display:inline-block; padding:10px 0;  height:40px;background-color: #dadada; padding:10px 0; margin-bottom:4px;box-sizing: content-box; vertical-align: middle;}
+td:last-child{
+  text-align: right;
+  width:20%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius:4px;
+  
+}
+td:first-child{
+  width:5%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius:4px;
+}
+td:nth-child(2){
+  width:75%;
+}
+sup.big{font-size:1rem;}
+sup.small{font-size:0.8rem; color:#9d9fa6}
 
+}
 .header-icons{
 float:right;
 ion-icon{
