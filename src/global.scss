@@ -24,3 +24,44 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.legends{
+  padding: 0 12px;
+  ion-chip{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    background: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.header-icons{
+float:right;
+ion-icon{
+  padding:0 4px;
+}
+
+}
+ /* Card 
+ ion-card {
+  --background:#c9ffbc;
+  --color: #003a05;
+}
+
+ion-card-title {
+  --color: #003a05;
+}
+
+ion-card-subtitle {
+  --color: #003a05;
+}
+
+/*Chip
+ion-chip {
+  --background: #ffffff;
+  --color: #003a05;
+}*/

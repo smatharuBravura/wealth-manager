@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar  color="primary">
+    <ion-title>Transactions</ion-title>
+    <div class="header-icons">
+      <ion-icon name="filter" ></ion-icon>
+      <ion-icon name="document" ></ion-icon>
+      <ion-icon name="notifications" ></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title>£452,657.98</ion-card-title>
+      <ion-card-subtitle>Portfolio Total</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Created On</ion-label>
+          <ion-label>Asset</ion-label>
+          <ion-label>Product Type</ion-label>
+          <ion-label>Amount</ion-label>
+          <ion-label>Tenant ID</ion-label>
+        </ion-item>
+        <ion-item *ngFor="let item of results">
+          <ion-label>{{item.createdon}}</ion-label>
+          <ion-label>{{item.asset}}</ion-label>
+          <ion-label>{{item.productType}}</ion-label>
+          <ion-label>{{item.amount}}</ion-label>
+          <ion-label>{{item.TennantID}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    </ion-card>
+    
+  
+</ion-content>

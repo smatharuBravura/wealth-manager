@@ -1,0 +1,74 @@
+[
+    {
+        "assetName": "2023-05-10T02:09:18.709Z",
+        "assetNumber": "LT522019576099059863",
+        "assetValue": "£67,887.09",
+        "value":"first",
+        "distribution": [{
+            "one": "50%",
+            "two": "10%",
+            "three": "20%",
+            "four": "20%"
+        }],
+        "market": [{
+            "one": "A3J UK ALL Share X",
+            "two": "A3J UK ALL Share X",
+            "three": "A6J Emerging Mrkts X",
+            "four": "P2Y Prop ACS2 Pens Y"
+        }]
+    },
+    {
+        "assetName": "2023-04-10T02:09:18.709Z",
+        "assetNumber": "LT522019576099059863",
+        "assetValue": "£67,887.09",
+        "value":"second",
+        "distribution": [{
+            "one": "50%",
+            "two": "10%",
+            "three": "20%",
+            "four": "20%"
+        }],
+        "market": [{
+            "one": "A3J UK ALL Share X",
+            "two": "A3J UK ALL Share X",
+            "three": "A6J Emerging Mrkts X",
+            "four": "P2Y Prop ACS2 Pens Y"
+        }]
+    },
+    {
+        "assetName": "2023-03-10T02:09:18.709Z",
+        "assetNumber": "LT522019576099059863",
+        "assetValue": "£67,887.09",
+        "value":"third",
+        "distribution": [{
+            "one": "50%",
+            "two": "10%",
+            "three": "20%",
+            "four": "20%"
+        }],
+        "market": [{
+            "one": "A3J UK ALL Share X",
+            "two": "A3J UK ALL Share X",
+            "three": "A6J Emerging Mrkts X",
+            "four": "P2Y Prop ACS2 Pens Y"
+        }]
+    },
+    {
+        "assetName": "2023-02-10T02:09:18.709Z",
+        "assetNumber": "LT522019576099059863",
+        "assetValue": "£67,887.09",
+        "value":"fourth",
+        "distribution": [{
+            "one": "50%",
+            "two": "10%",
+            "three": "20%",
+            "four": "20%"
+        }],
+        "market": [{
+            "one": "A3J UK ALL Share X",
+            "two": "A3J UK ALL Share X",
+            "three": "A6J Emerging Mrkts X",
+            "four": "P2Y Prop ACS2 Pens Y"
+        }]
+    }
+]

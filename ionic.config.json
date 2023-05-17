@@ -1,6 +1,7 @@
 {
   "name": "Wealth Manager",
-  "integrations": {},
-  "type": "angular",
-  "id": "b80445c3"
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
 }

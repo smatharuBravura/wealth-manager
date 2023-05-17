@@ -1,0 +1,63 @@
+<ion-header>
+<ion-toolbar color="primary">
+<ion-title>Hi Surinder</ion-title>
+<div class="header-icons"><ion-icon name="filter" ></ion-icon>  <ion-icon name="document" ></ion-icon>  <ion-icon name="notifications" ></ion-icon></div>
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="secondary">
+<ion-card-header>
+  <ion-card-title>£452,657.98</ion-card-title>
+  <ion-card-subtitle>Portfolio Total</ion-card-subtitle>
+</ion-card-header>
+<ion-card-content>
+  <ion-chip color="dark">ISA</ion-chip>
+  <ion-chip color="dark">GIA</ion-chip>
+  <ion-chip color="dark">JISA</ion-chip>
+  <ion-chip style="float:right" color="dark">More...</ion-chip>
+</ion-card-content>
+</ion-card>
+
+<ion-accordion-group  class="ion-padding" [multiple]="true" [value]="['first']">
+<ion-accordion *ngFor="let item of results" value='{{item.value}}'>
+  <ion-item slot="header" color="light">
+    <ion-label>{{item.assetName}}</ion-label>
+  </ion-item>
+  <div class="ion-padding" slot="content">
+    <ion-text><sub>{{item.assetNumber}} | {{item.assetValue}}</sub></ion-text>
+
+    <ion-card style="margin: 20px 0;">
+      <ion-card-header>
+        Distribution chart
+      </ion-card-header>
+      <ion-card-content>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <div class="legends">
+      <ion-chip style='width:"{{item.distribution[0].one}} + %"'>
+      <ion-icon name="ellipse" color="primary"></ion-icon>
+      <ion-label>{{item.market[0].one}}</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-icon name="ellipse" color="secondary"></ion-icon>
+      <ion-label>{{item.market[0].two}}</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-icon name="ellipse" color="tertiary"></ion-icon>
+      <ion-label>{{item.market[0].three}}</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-icon name="ellipse" ></ion-icon>
+      <ion-label>{{item.market[0].four}}</ion-label>
+    </ion-chip>
+    </div>
+    </div>
+</ion-accordion>
+</ion-accordion-group>
+
+<!--app-explore-container name="Dashboard"></app-explore-container-->
+</ion-content>

@@ -1,0 +1,345 @@
+[
+    {
+   "createdon": "2023-05-10T02:09:18.709Z",
+   "asset": "LT522019576099059863",
+   "productType": "Table",
+   "amount": 10,
+   "TennantID": "1"
+    },
+    {
+   "createdon": "2023-05-10T11:54:08.654Z",
+   "asset": "XK560196006380308037",
+   "productType": "Shirt",
+   "amount": 62,
+   "TennantID": "2"
+    },
+    {
+   "createdon": "2023-05-10T08:20:07.288Z",
+   "asset": "LV07GLDW0T06404201314",
+   "productType": "Ball",
+   "amount": 41,
+   "TennantID": "3"
+    },
+    {
+   "createdon": "2023-05-10T05:07:32.095Z",
+   "asset": "PT11040083252240019000556",
+   "productType": "Chips",
+   "amount": 69,
+   "TennantID": "4"
+    },
+    {
+   "createdon": "2023-05-10T10:08:55.156Z",
+   "asset": "VG257N880010075610071587",
+   "productType": "Bacon",
+   "amount": 62,
+   "TennantID": "5"
+    },
+    {
+   "createdon": "2023-05-10T13:58:11.699Z",
+   "asset": "HR3218004115002300171",
+   "productType": "Table",
+   "amount": 7,
+   "TennantID": "6"
+    },
+    {
+   "createdon": "2023-05-10T17:49:36.962Z",
+   "asset": "FI7650242446029029",
+   "productType": "Shirt",
+   "amount": 82,
+   "TennantID": "7"
+    },
+    {
+   "createdon": "2023-05-10T05:32:29.260Z",
+   "asset": "PT17003626652319210073198",
+   "productType": "Cheese",
+   "amount": 83,
+   "TennantID": "8"
+    },
+    {
+   "createdon": "2023-05-10T13:33:52.918Z",
+   "asset": "XK593501089908404433",
+   "productType": "Chips",
+   "amount": 56,
+   "TennantID": "9"
+    },
+    {
+   "createdon": "2023-05-10T08:51:38.685Z",
+   "asset": "AL4620870023D7P671242904270Y",
+   "productType": "Hat",
+   "amount": 53,
+   "TennantID": "10"
+    },
+    {
+   "createdon": "2023-05-10T15:32:09.821Z",
+   "asset": "AZ35NPLB30403710710095803001",
+   "productType": "Hat",
+   "amount": 58,
+   "TennantID": "11"
+    },
+    {
+   "createdon": "2023-05-10T13:01:18.731Z",
+   "asset": "GR050097004S527CD251126001P",
+   "productType": "Chair",
+   "amount": 43,
+   "TennantID": "12"
+    },
+    {
+   "createdon": "2023-05-10T23:42:45.428Z",
+   "asset": "AD6400780035Q8863L458H0G",
+   "productType": "Tuna",
+   "amount": 24,
+   "TennantID": "13"
+    },
+    {
+   "createdon": "2023-05-10T23:17:50.216Z",
+   "asset": "SI89280010183740412",
+   "productType": "Fish",
+   "amount": 7,
+   "TennantID": "14"
+    },
+    {
+   "createdon": "2023-05-10T10:33:57.666Z",
+   "asset": "HU78200150324641829001779614",
+   "productType": "Pants",
+   "amount": 40,
+   "TennantID": "15"
+    },
+    {
+   "createdon": "2023-05-10T08:43:30.785Z",
+   "asset": "ME98216030067015989122",
+   "productType": "Mouse",
+   "amount": 46,
+   "TennantID": "16"
+    },
+    {
+   "createdon": "2023-05-10T00:57:29.335Z",
+   "asset": "TN8904989791824106004160",
+   "productType": "Cheese",
+   "amount": 56,
+   "TennantID": "17"
+    },
+    {
+   "createdon": "2023-05-10T16:20:14.823Z",
+   "asset": "SM65P5909063799Z7690841H524",
+   "productType": "Soap",
+   "amount": 90,
+   "TennantID": "18"
+    },
+    {
+   "createdon": "2023-05-10T00:40:08.521Z",
+   "asset": "VG1309770071805009003429",
+   "productType": "Salad",
+   "amount": 21,
+   "TennantID": "19"
+    },
+    {
+   "createdon": "2023-05-10T06:54:18.128Z",
+   "asset": "FI0381008635070543",
+   "productType": "Mouse",
+   "amount": 31,
+   "TennantID": "20"
+    },
+    {
+   "createdon": "2023-05-10T19:29:30.308Z",
+   "asset": "HU28009215740709038500510088",
+   "productType": "Cheese",
+   "amount": 25,
+   "TennantID": "21"
+    },
+    {
+   "createdon": "2023-05-10T17:43:55.418Z",
+   "asset": "AE150820206660079091081",
+   "productType": "Bike",
+   "amount": 82,
+   "TennantID": "22"
+    },
+    {
+   "createdon": "2023-05-10T14:49:23.303Z",
+   "asset": "RO24SBWQ46475X51M960H67D",
+   "productType": "Bike",
+   "amount": 100,
+   "TennantID": "23"
+    },
+    {
+   "createdon": "2023-05-10T18:34:38.651Z",
+   "asset": "LT078317410093004361",
+   "productType": "Bike",
+   "amount": 95,
+   "TennantID": "24"
+    },
+    {
+   "createdon": "2023-05-10T18:15:00.010Z",
+   "asset": "XK047349894690073005",
+   "productType": "Car",
+   "amount": 30,
+   "TennantID": "25"
+    },
+    {
+   "createdon": "2023-05-10T18:11:16.855Z",
+   "asset": "MK41214W3I9RH939175",
+   "productType": "Pizza",
+   "amount": 23,
+   "TennantID": "26"
+    },
+    {
+   "createdon": "2023-05-10T18:18:11.223Z",
+   "asset": "GI02OOTR249M80R238P8V24",
+   "productType": "Shoes",
+   "amount": 22,
+   "TennantID": "27"
+    },
+    {
+   "createdon": "2023-05-10T05:02:46.200Z",
+   "asset": "VG3598E40600015110020044",
+   "productType": "Car",
+   "amount": 0,
+   "TennantID": "28"
+    },
+    {
+   "createdon": "2023-05-10T06:11:07.153Z",
+   "asset": "JO45QUKS0088151770607100878068",
+   "productType": "Tuna",
+   "amount": 65,
+   "TennantID": "29"
+    },
+    {
+   "createdon": "2023-05-10T11:27:50.140Z",
+   "asset": "CH0630388Z86487X36583",
+   "productType": "Bacon",
+   "amount": 33,
+   "TennantID": "30"
+    },
+    {
+   "createdon": "2023-05-10T10:30:00.777Z",
+   "asset": "ME80001505091240032042",
+   "productType": "Salad",
+   "amount": 66,
+   "TennantID": "31"
+    },
+    {
+   "createdon": "2023-05-10T12:43:10.791Z",
+   "asset": "GE71QE5700868368006001",
+   "productType": "Towels",
+   "amount": 34,
+   "TennantID": "32"
+    },
+    {
+   "createdon": "2023-05-10T14:20:17.934Z",
+   "asset": "LU8314000600108P0953",
+   "productType": "Chair",
+   "amount": 18,
+   "TennantID": "33"
+    },
+    {
+   "createdon": "2023-05-10T07:35:45.577Z",
+   "asset": "PL74706581370030686084204067",
+   "productType": "Mouse",
+   "amount": 98,
+   "TennantID": "34"
+    },
+    {
+   "createdon": "2023-05-10T01:55:10.988Z",
+   "asset": "AZ74BSAW70050030070040503031",
+   "productType": "Table",
+   "amount": 99,
+   "TennantID": "35"
+    },
+    {
+   "createdon": "2023-05-10T09:02:25.066Z",
+   "asset": "AT202011430299007380",
+   "productType": "Pants",
+   "amount": 38,
+   "TennantID": "36"
+    },
+    {
+   "createdon": "2023-05-10T13:31:03.268Z",
+   "asset": "SA6556804725691828I1338B",
+   "productType": "Chips",
+   "amount": 28,
+   "TennantID": "37"
+    },
+    {
+   "createdon": "2023-05-10T07:06:15.320Z",
+   "asset": "LV02HZUGE5584SJ652413",
+   "productType": "Sausages",
+   "amount": 78,
+   "TennantID": "38"
+    },
+    {
+   "createdon": "2023-05-10T03:55:04.209Z",
+   "asset": "BE98511602091098",
+   "productType": "Salad",
+   "amount": 54,
+   "TennantID": "39"
+    },
+    {
+   "createdon": "2023-05-10T17:20:45.842Z",
+   "asset": "PT86420430063027260731009",
+   "productType": "Sausages",
+   "amount": 7,
+   "TennantID": "40"
+    },
+    {
+   "createdon": "2023-05-10T23:44:39.775Z",
+   "asset": "XK036593050048980092",
+   "productType": "Shoes",
+   "amount": 20,
+   "TennantID": "41"
+    },
+    {
+   "createdon": "2023-05-10T06:47:15.262Z",
+   "asset": "RS96040670249800140050",
+   "productType": "Gloves",
+   "amount": 15,
+   "TennantID": "42"
+    },
+    {
+   "createdon": "2023-05-10T19:57:03.870Z",
+   "asset": "AE070945613933207003139",
+   "productType": "Fish",
+   "amount": 38,
+   "TennantID": "43"
+    },
+    {
+   "createdon": "2023-05-10T12:13:58.131Z",
+   "asset": "GB83LRFE94059527469024",
+   "productType": "Salad",
+   "amount": 78,
+   "TennantID": "44"
+    },
+    {
+   "createdon": "2023-05-10T15:32:13.078Z",
+   "asset": "AT926228902300598615",
+   "productType": "Gloves",
+   "amount": 55,
+   "TennantID": "45"
+    },
+    {
+   "createdon": "2023-05-10T07:42:12.315Z",
+   "asset": "CY96002003881069620722299442",
+   "productType": "Computer",
+   "amount": 3,
+   "TennantID": "46"
+    },
+    {
+   "createdon": "2023-05-10T08:11:13.533Z",
+   "asset": "SK3206787001908700981166",
+   "productType": "Chips",
+   "amount": 22,
+   "TennantID": "47"
+    },
+    {
+   "createdon": "2023-05-10T20:27:52.958Z",
+   "asset": "IL557504350940091690520",
+   "productType": "Towels",
+   "amount": 25,
+   "TennantID": "48"
+    },
+    {
+   "createdon": "2023-05-10T11:01:58.697Z",
+   "asset": "CH5510898X778X48194P9",
+   "productType": "Chips",
+   "amount": 92,
+   "TennantID": "49"
+    }
+    ]
