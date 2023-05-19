@@ -41,10 +41,10 @@
 .transaction-table{
   width:100%;
 sup{display:block; line-height:1;padding:2px 8px; top:0; }
-td{display:inline-block; padding:10px 0;  height:40px;background-color: #dadada; padding:10px 0; margin-bottom:4px;box-sizing: content-box; vertical-align: middle;}
+td{display:inline-block; padding:10px 0;  height:40px;background-color: #f4f4f4; padding:10px 0; margin-bottom:4px;box-sizing: content-box; vertical-align: middle;}
 td:last-child{
   text-align: right;
-  width:20%;
+  width:40%;
   border-top-right-radius: 4px;
   border-bottom-right-radius:4px;
   
@@ -55,10 +55,13 @@ td:first-child{
   border-bottom-left-radius:4px;
 }
 td:nth-child(2){
-  width:75%;
+  width:55%;
 }
 sup.big{font-size:1rem;}
-sup.small{font-size:0.8rem; color:#9d9fa6}
+sup.small{font-size:0.8rem; color:#666666}
+
+.up{color:green}
+.down{color:#eb445a;}
 
 }
 .header-icons{
@@ -66,4 +69,26 @@ float:right;
 ion-icon{
   padding:0 4px;
 }
+}
+
+.setting-buttons{
+  ion-button{
+    width:100%;
+    padding:0 10px;
+    --background:#ffffff;
+    span{
+      display:inline-block;
+      width:100%;
+      padding:3px 0;
+      text-align:left;
+      color:#000000;
+      text-transform:uppercase;
+
+    }
+
+  }
+  ion-icon{
+   color:black;
+   font-size:1.5rem
+  }
 }
