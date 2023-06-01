@@ -27,7 +27,7 @@ export class AppComponent {
 
   private myAuthData = {
     clientId: environment.OAUTH_CLIENT,
-    redirectUri: "http://localhost:8101/dashboard/",
+    redirectUri: environment.redirectUri,
     responseType: "code",
     display: "popup",
     scope: "refresh_token"
@@ -35,7 +35,7 @@ export class AppComponent {
   
   private myTokenData = { 
     grant_type: "authorization_code",
-    redirectUri: "http://localhost:8101/dashboard/",
+    redirectUri: environment.redirectUri,
     responseType: "code",
   };
   

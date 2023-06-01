@@ -16,21 +16,24 @@ export class DashboardPage implements OnInit {
 
 //@ViewChild('doughnutCanvas') private doughnutCanvas: ElementRef;
 
-  constructor(private dataService: AccordionDataService) {
+  constructor(private investorHoldingService: AccordionDataService) {
   
    }
   
   ngOnInit() {
-    //this.dataService.getLocalData().subscribe(json => {
-      console.log("test");
-      //this.results = json;
-     // });
+    this.investorHoldingService.getInvestorHolding().subscribe(
+    (response: any) => {
+      console.log('results::', response.data);
+      this.results = response.data;
+      console.log("Results::::::::::", this.results);
+    });
+      
   }
   ngAfterViewInit() {
-    this.dataService.getLocalData().subscribe(json => {
-      console.log('results::', json);
-      this.results = json;
-      });
+    // this.dataService.getLocalData().subscribe(json => {
+    //   console.log('results::', json);
+    //   this.results = json;
+    //   });
 
     //this.doughnutChartMethod();
   }

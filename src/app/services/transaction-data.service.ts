@@ -4,20 +4,18 @@ import { environment } from 'src/environments/environment';
 import { Observable, map } from 'rxjs';
 import { Transactions } from '../interface/transactons';
 import { Buffer} from 'buffer';
-import { SnowflakeService } from './snowflake.service';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class TransactionDataService {
 
-  constructor(private http: HttpClient, private snowFlakeService: SnowflakeService) { 
-
+  constructor(private http: HttpClient) { 
   }
 
-  getLocalData(){
-    return this.snowFlakeService.getClientHolding('0209198', 'Liontrust');
-
+  getLocalData(): Observable<Transactions[]>{
+    return this.getClientTransactions('Liontrust', '0209198',);
   }
 
   /*getRemoteData(){

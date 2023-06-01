@@ -21,12 +21,12 @@
 </ion-card>
 
 <ion-accordion-group  class="ion-padding" [multiple]="true" [value]="['first']">
-<ion-accordion *ngFor="let item of results" value='{{item.value}}'>
+<ion-accordion *ngFor="let item of results" value='{{item}}'>
   <ion-item slot="header" color="light">
-    <ion-label>{{item.assetName}}</ion-label>
+    <ion-label>{{item}}</ion-label>
   </ion-item>
   <div class="ion-padding" slot="content">
-    <ion-text><sub>{{item.assetNumber}} | {{item.assetValue}}</sub></ion-text>
+    <ion-text><sub>{{item}} | {{item}}</sub></ion-text>
 
     <ion-card style="margin: 20px 0;">
       <ion-card-header>
@@ -38,21 +38,21 @@
     </ion-card>
 
     <div class="legends">
-      <ion-chip style='width:"{{item.distribution[0].one}} + %"'>
+      <ion-chip style='width:"{{item}} + %"'>
       <ion-icon name="ellipse" color="primary"></ion-icon>
-      <ion-label>{{item.market[0].one}}</ion-label>
+      <ion-label>{{item}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" color="secondary"></ion-icon>
-      <ion-label>{{item.market[0].two}}</ion-label>
+      <ion-label>{{item}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" color="tertiary"></ion-icon>
-      <ion-label>{{item.market[0].three}}</ion-label>
+      <ion-label>{{item}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" ></ion-icon>
-      <ion-label>{{item.market[0].four}}</ion-label>
+      <ion-label>{{item}}</ion-label>
     </ion-chip>
     </div>
     </div>

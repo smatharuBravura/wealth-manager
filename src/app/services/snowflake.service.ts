@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParameterCodec, HttpPar
 import { Product } from '../interface/product';
 import { Holding } from '../interface/holding';
 import {  catchError,  map,  Observable,   tap, throwError } from 'rxjs';
-import { environment } from 'src/environments/environment'
+import { environment } from '../../environments/environment'
 import { Buffer } from 'buffer';
 import { Injectable, Optional } from '@angular/core';
 import { LogService } from './log.service';
@@ -16,13 +16,6 @@ const HTTP_OPTIONS = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
     'Authorization': 'Basic ' + Buffer.from(environment.OAUTH_CLIENT + ':' + environment.OAUTH_SECRET).toString('base64')
-  })
-};
-
-
-const HTTP_OAUTH_OPTIONS = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/x-www-form-urlencoded',
   })
 };
 
@@ -55,7 +48,7 @@ export class SnowflakeService {
 
   private myAuthData = {
     clientId: environment.OAUTH_CLIENT,
-    redirectUri: "http://localhost:8101/dashboard/",
+    redirectUri: environment.redirectUri,
     responseType: "code"
   };
 
@@ -115,7 +108,7 @@ export class SnowflakeService {
     let newParm = "user=" + userDtl
       + "&" + "grant_type=" + encodeURIComponent("authorization_code") 
       + "&" + "code=" + encodeURIComponent(tokenCode) 
-      + "&" + "redirect_uri=" + encodeURIComponent("http://localhost:8101/dashboard/");
+      + "&" + "redirect_uri=" + encodeURIComponent(environment.redirectUri,);
 
     let path = "/oauth/token-request";
     return this.httpClient.post<any>(path, newParm, HTTP_TOKEN_OPTIONS).pipe(

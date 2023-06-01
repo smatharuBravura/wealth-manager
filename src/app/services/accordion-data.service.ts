@@ -1,15 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Observable } from 'rxjs';
+import { SnowflakeService } from './snowflake.service';
+import { Holding } from '../interface/holding';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccordionDataService {
 
-  constructor(private http: HttpClient) { }
+  constructor( private snowflakeService: SnowflakeService ) { }
 
-  getLocalData(){
-    return this.http.get("/assets/data/accordion-data.json");
-
+  getInvestorHolding(): Observable<Holding[] > {
+    return this.snowflakeService.getClientHolding('0209198', 'Liontrust');
+    // return this.http.get("/asgetClientHoldingsets/data/accordion-data.json")
   }
+
+
+
+
 }
