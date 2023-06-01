@@ -5,6 +5,18 @@
 export const environment = {
   production: false,
   apiKey: 'https://mockapi.io/clone/645c2b23a8f9e4d6e77cc141', // <-- Enter your own key here!'
+
+  apiUrl: 'https://gu76282.ap-southeast-2.snowflakecomputing.com/api/v2/statements/',
+  authUrl: 'https://gu76282.ap-southeast-2.snowflakecomputing.com/oauth/authorize',
+  // tokenUrl: 'https://gu76282.ap-southeast-2.snowflakecomputing.com/oauth/token-request',
+  // tokenUrl: 'https://gu76282.ap-southeast-2.privatelink.snowflakecomputing.com/oauth/token-request',
+  snfDatabase: 'DATAWORX',
+  snfSchema: "BABYLON",
+  snfWarehouse: 'COMPUTE_WH',
+  snfTimeout: '20',
+  OAUTH_CLIENT: 'F+3HwRPalzBYXq7bDcP8rIGhaaY=',
+  OAUTH_SECRET: '95mjt5CMjS16/KUbP+VV+M3DCCcMfXk+nRDaelULWaw=',
+  tokenUrl: '/oauth/token-request'
 };
 
 /*
@@ -14,4 +26,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+ import 'zone.js/plugins/zone-error';  // Included with Angular CLI.

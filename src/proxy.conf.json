@@ -1,0 +1,9 @@
+{
+    "/oauth/token-request": {
+        "target": "https://midwinter-bvs_tao.snowflakecomputing.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+       
+    }
+}

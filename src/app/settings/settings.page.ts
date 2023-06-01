@@ -11,5 +11,10 @@ export class SettingsPage implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  onLogout(): void {
+    sessionStorage.removeItem('code');
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+  }
 }
