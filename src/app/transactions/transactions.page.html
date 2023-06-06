@@ -30,19 +30,20 @@
   </ion-item>
 </ion-list>
 <div class="ion-padding">
-  <table class="transaction-table">
+  <table class="transactiontable" border="1">
 <tbody>
 
-<tr *ngFor="let item of results">
+<tr *ngFor="let item of jData">
   <td><sup class="big"><ion-icon name="arrow-{{item.position}}" class="{{item.position}}"></ion-icon></sup></td>
-  <td><sup class="big">{{item}}</sup>
-    <sup class="small">{{item.assetName}} | {{item.assetName}}</sup></td>
-  <td><sup class="small">{{item.assetName}} | {{item.assetName}}</sup>
-    <sup class="big {{item.position}}">{{item.assetName}}</sup></td>
-</tr>
+  <td><sup class="big">{{item.tenantKey}}</sup>
+    <sup class="small">{{item.accountKey}} | {{item.accountKey}}</sup></td>
+  <td><sup class="small">{{item.investorKey}} | {{item.investorKey}}</sup>
+    <sup class="big {{item.position}}">{{item.receivedDate}}</sup></td>
+</tr> 
 </tbody>
   </table>
-</div>
   
+</div>
+
 
 </ion-content>

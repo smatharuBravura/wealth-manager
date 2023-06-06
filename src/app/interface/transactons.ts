@@ -8,6 +8,7 @@ export interface Transactions {
     investorKey: number;
     transactionTypeKey: number;
     receivedDate: string;
+    creationDate: string
     effectiveDate: string;
     pricedDate: string;
     settlementDate: string;
