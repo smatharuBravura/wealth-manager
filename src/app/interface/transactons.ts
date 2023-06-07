@@ -6,11 +6,11 @@ export interface Transactions {
     investor: string;
     transactionType: string;
     receivedDate: string;
-    creationDate: string;
+    creationDate: string
     effectiveDate: string;
     pricedDate: string;
     settlementDate: string;
-    settlementStatus: string[];
+    settlementStatus: string;
     balanceEffect: number;
     units: string;
     price: string;
