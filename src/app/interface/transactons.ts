@@ -1,13 +1,12 @@
 export interface Transactions {
-    assetTransactionRefKey?: number;
-    tenantKey: number;
-    assetTransactionKey: number;
-    accountKey: number;
-    productKey: number;
-    assetKey: number;
-    investorKey: number;
-    transactionTypeKey: number;
+    tenant: string;
+    account: string;
+    product: string;
+    asset: string;
+    investor: string;
+    transactionType: string;
     receivedDate: string;
+    creationDate: string;
     effectiveDate: string;
     pricedDate: string;
     settlementDate: string;

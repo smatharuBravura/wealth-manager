@@ -35,10 +35,11 @@
 
 <tr *ngFor="let item of results">
   <td><sup class="big"><ion-icon name="arrow-{{item.position}}" class="{{item.position}}"></ion-icon></sup></td>
-  <td><sup class="big">{{item}}</sup>
-    <sup class="small">{{item.assetName}} | {{item.assetName}}</sup></td>
-  <td><sup class="small">{{item.assetName}} | {{item.assetName}}</sup>
-    <sup class="big {{item.position}}">{{item.assetName}}</sup></td>
+  <td><sup class="small">{{item.TENANT_NAME}} </sup>
+  <td><sup class="big">{{item.INVESTOR_NAME}}</sup>
+    <sup class="small">{{item.ASSET_NAME}} | {{item.ASSET_NAME}}</sup></td>
+  <td><sup class="small">{{item.AMOUNT}} | {{item.AMOUNT}}</sup>
+    <sup class="big {{item.position}}">{{item.RECEIVED_DATE}}</sup></td>
 </tr>
 </tbody>
   </table>

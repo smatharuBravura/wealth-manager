@@ -23,10 +23,10 @@
 <ion-accordion-group  class="ion-padding" [multiple]="true" [value]="['first']">
 <ion-accordion *ngFor="let item of results" value='{{item}}'>
   <ion-item slot="header" color="light">
-    <ion-label>{{item}}</ion-label>
+    <ion-label>{{item.PRODUCT_TYPE}}</ion-label>
   </ion-item>
   <div class="ion-padding" slot="content">
-    <ion-text><sub>{{item}} | {{item}}</sub></ion-text>
+    <ion-text><sub>{{item.PRODUCT_TYPE}} | {{item.PRODUCT_TYPE}}</sub></ion-text>
 
     <ion-card style="margin: 20px 0;">
       <ion-card-header>
@@ -40,19 +40,19 @@
     <div class="legends">
       <ion-chip style='width:"{{item}} + %"'>
       <ion-icon name="ellipse" color="primary"></ion-icon>
-      <ion-label>{{item}}</ion-label>
+      <ion-label>{{item.PRODUCT_SHORT_NAME}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" color="secondary"></ion-icon>
-      <ion-label>{{item}}</ion-label>
+      <ion-label>{{item.PRODUCT_TYPE}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" color="tertiary"></ion-icon>
-      <ion-label>{{item}}</ion-label>
+      <ion-label>{{item.ACCOUNT_REFERENCE}}</ion-label>
     </ion-chip>
     <ion-chip>
       <ion-icon name="ellipse" ></ion-icon>
-      <ion-label>{{item}}</ion-label>
+      <ion-label>{{item.ACCOUNT_IDENTIFIER}}</ion-label>
     </ion-chip>
     </div>
     </div>

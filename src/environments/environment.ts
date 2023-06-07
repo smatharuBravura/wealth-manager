@@ -12,15 +12,15 @@ export const environment = {
   snfWarehouse: 'COMPUTE_WH',
   snfTimeout: '20',
   // Surinder uses these 3 setting
-  OAUTH_CLIENT: 'F+3HwRPalzBYXq7bDcP8rIGhaaY=',
-  OAUTH_SECRET: '95mjt5CMjS16/KUbP+VV+M3DCCcMfXk+nRDaelULWaw=',
-  redirectUri: "http://localhost:8101/dashboard/",
+  // OAUTH_CLIENT: 'F+3HwRPalzBYXq7bDcP8rIGhaaY=',
+  // OAUTH_SECRET: '95mjt5CMjS16/KUbP+VV+M3DCCcMfXk+nRDaelULWaw=',
+  // redirectUri: "http://localhost:8101/dashboard/",
   
   
   //Aiden uses these 3 setting
-  // OAUTH_CLIENT: 'z5CT+sTu9PNkTpvHVbkswKpXKww=',
-  // OAUTH_SECRET: 'K5XVcJ9o57pNBentc04/Y/XEdbHP1zDtMs9tzPOJtdM=',
-  // redirectUri: "http://localhost:4200/",
+  OAUTH_CLIENT: 'z5CT+sTu9PNkTpvHVbkswKpXKww=',
+  OAUTH_SECRET: 'K5XVcJ9o57pNBentc04/Y/XEdbHP1zDtMs9tzPOJtdM=',
+  redirectUri: "http://localhost:4200/",
 
   tokenUrl: '/oauth/token-request'
 };

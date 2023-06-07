@@ -43,10 +43,9 @@ return this.http.get(
     };
 
     getClientTransactions(tenant: string, investor: string): Observable<Transactions[]> {
-        this.myData.statement = "Call SP_GETTRANSACTIONSBYTENANTCLIENT( '" + tenant.valueOf() + "', '" + investor.valueOf() + "');";
+        this.myData.statement = "Call SP_GETINVESTORTRANSACTIONS( '" + tenant.valueOf() + "', '" + investor.valueOf() + "');";
         return this.http.post<Transactions[]>(this.apiUrl, this.myData, this.HTTP_OPTIONS).
             pipe(map((data: Transactions[]) => {
-                console.log(data);
                 return data;
             }),
             )

@@ -77,7 +77,7 @@ export class SnowflakeService {
   }
 
   getClientHolding(investor: string, tenant: string): Observable<Holding[]> {
-    this.myData.statement = "Call GetClientHolding( '" + investor.valueOf() + "', '" + tenant.valueOf() + "');";
+    this.myData.statement = "Call GETCLIENTHOLDINGJSON( '" + investor.valueOf() + "', '" + tenant.valueOf() + "');";
     return this.httpClient.post<Holding[]>(this.apiUrl, this.myData, HTTP_OPTIONS).pipe(map(data => {
       return data;
     }));
@@ -124,11 +124,9 @@ export class SnowflakeService {
   tokenRefresh(): Observable<any> {
     let tokenCode = sessionStorage.getItem('code') || "";
     let userDtl = environment.OAUTH_CLIENT + ":" + environment.OAUTH_SECRET;
-    let newParm = "user=" + userDtl
-      + "&" + "grant_type=" + encodeURIComponent('refresh_token') 
+    let newParm =  "grant_type=" + encodeURIComponent('refresh_token') 
       + "&" + "redirect_uri=" + encodeURIComponent(this.myAuthData.redirectUri) 
-      + "&" + "refresh_token=" + encodeURIComponent(this.tokenService.getRefreshToken())
-      + "&" + "code=" + encodeURIComponent(tokenCode);
+      + "&" + "refresh_token=" + encodeURIComponent(this.tokenService.getRefreshToken());
 
     let path = "/oauth/token-request";
     return this.httpClient.post<any>(path, newParm, HTTP_TOKEN_OPTIONS).pipe(

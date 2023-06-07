@@ -1,27 +1,18 @@
 
 
-import { ChangeDetectorRef, Component, Inject, Input, OnInit, ViewChild } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, Inject } from '@angular/core';
+import { HttpHeaders } from '@angular/common/http';
 import { SnowflakeService } from './services/snowflake.service';
 import { DOCUMENT } from '@angular/common';
 import { environment } from '../environments/environment'
-import { Buffer } from 'buffer';
-import { BehaviorSubject,  Observable } from 'rxjs';
-import { TransactionDataService } from './services/transaction-data.service';
-//import { TransactionDataSource } from '../services/transaction/transaction.datasource';
-import { Transactions } from './interface/transactons';
-//import { MatTableDataSource } from '@angular/material/table';
 import { Product } from './interface/product';
 import { Holding } from './interface/holding';
-
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-
-
 
 export class AppComponent {
 
@@ -50,7 +41,6 @@ export class AppComponent {
   txnSource: any;
   cdr: any;
 
-
   constructor(private snowFlakeService: SnowflakeService,
     @Inject(DOCUMENT) private document: Document,
   ) {
@@ -76,7 +66,6 @@ export class AppComponent {
 
     }
 
-    // this.codeForm.code = sessionStorage.getItem('code');
   }
 
 
@@ -89,8 +78,6 @@ export class AppComponent {
   onRequestToken(): void {
     console.log('onRequestToken ');
     this.snowFlakeService.tokenRequest().subscribe(
-      //(response) => console.log(response),
-      //(error) => console.log(error),
       () => console.log('Done Getting Code')
     );
   }
@@ -113,20 +100,13 @@ export class AppComponent {
   onRefreshToken(): void {
     console.log('onUseCode ');
     this.snowFlakeService.tokenRefresh().subscribe(
-     // (response) => console.log(response),
-      // (error) => console.log(error),
       () => console.log('Done Refreshing Token')
     );
   }
 
   onGetProducts(tenant: string): void {
     this.snowFlakeService.getTenantProducts(tenant.valueOf()).subscribe(
-      // (response) => (response: any) => {
-      //   console.log(response),
-      //   alert(this.userlist);
-      // },
-      // (error) => console.log(error),
-      () => console.log('Done Getting Products')
+        () => console.log('Done Getting Products')
     );
   }
   userlist(userlist: any) {
@@ -139,7 +119,6 @@ export class AppComponent {
         console.log('Holdings ' + response),
           alert('Holdings ' + response.values);
       }, 
-      // (error) => console.log(error),
       () => console.log('Done Getting Investor Holding')
     );
   }
@@ -152,7 +131,6 @@ export class AppComponent {
         console.log(response),
           alert(response.productId);
       },
-      // (error) => console.log(error),
       () => console.log('Done Getting Product Detail by Name')
     );
   }
@@ -162,8 +140,6 @@ export class AppComponent {
       (response:any) => {console.log(response),
           alert(this.userlist);
       },
-
-      // (error) => console.log(error),
       () => console.log('Done Getting Product')
     );
   }
@@ -172,7 +148,6 @@ export class AppComponent {
     this.txnSource.loadGetClientTransactions(tenant.valueOf(), investor.valueOf())
       .subscribe((data: any) => {
         this.userlist = data;
-        // this.dataSource = new MatTableDataSource(this.userlist);
     });
 
     this.cdr.detectChanges();
