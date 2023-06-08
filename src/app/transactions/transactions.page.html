@@ -30,18 +30,25 @@
   </ion-item>
 </ion-list>
 <div class="ion-padding">
-  <table class="transactiontable" border="1">
-<tbody>
+  <table class="transactiontable" border="0">
+    <tbody>
+    <tr *ngFor="let item of results">
+      <td><sup class="big"><ion-icon name="arrow-{{item.position}}" class="{{item.position}}"></ion-icon></sup></td>
+      <td><sup class="big">{{item.INVESTOR_NAME}}</sup></td>
+      <td><sup class="small">{{item.PRODUCT_TYPE}} </sup>
+      <td><sup class="small">{{item.PRODUCT_NAME}} </sup>
+      <td><sup class="big">{{item.ACCOUNT_REFERENCE}}</sup></td>
+      <td><sup class="big"> {{item.EFFECTIVE_DATE | date:'dd MMM yyyy'}}</sup></td>
+      <td><sup class="big">{{item.TRANSACTION_TYPE_DESCRIPTION}}</sup></td>
+      <td><sup class="big">{{item.ASSET_NAME}} </sup></td>
+      <td><sup class="big">{{item.UNITS | number:'1.6-6' }} </sup></td>
+      <td><sup class="big">{{item.PRICE | currency }} </sup></td>
+      <td><sup class="big">{{item.AMOUNT | currency }} </sup></td>
+      <td><sup class="big">{{item.TOTAL_CHARGE_AMOUNT | currency }} </sup></td>
+      <td><sup class="big">{{item.TOTAL_DISCOUNT_AMOUNT | currency }} </sup></td>
 
-<tr *ngFor="let item of results">
-  <td><sup class="big"><ion-icon name="arrow-{{item.position}}" class="{{item.position}}"></ion-icon></sup></td>
-  <td><sup class="small">{{item.TENANT_NAME}} </sup>
-  <td><sup class="big">{{item.INVESTOR_NAME}}</sup>
-    <sup class="small">{{item.ASSET_NAME}} | {{item.ASSET_NAME}}</sup></td>
-  <td><sup class="small">{{item.AMOUNT}} | {{item.AMOUNT}}</sup>
-    <sup class="big {{item.position}}">{{item.RECEIVED_DATE}}</sup></td>
-</tr>
-</tbody>
+    </tr>
+    </tbody>
   </table>
   
 </div>

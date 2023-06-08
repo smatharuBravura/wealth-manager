@@ -76,8 +76,8 @@ export class SnowflakeService {
     }));
   }
 
-  getClientHolding(investor: string, tenant: string): Observable<Holding[]> {
-    this.myData.statement = "Call GETCLIENTHOLDINGJSON( '" + investor.valueOf() + "', '" + tenant.valueOf() + "');";
+  getClientHolding(tenant: string, investor: string): Observable<Holding[]> {
+    this.myData.statement = "Call GETCLIENTHOLDINGJSON( '" + tenant.valueOf() + "', '" + investor.valueOf() + "');";
     return this.httpClient.post<Holding[]>(this.apiUrl, this.myData, HTTP_OPTIONS).pipe(map(data => {
       return data;
     }));
@@ -131,7 +131,7 @@ export class SnowflakeService {
     let path = "/oauth/token-request";
     return this.httpClient.post<any>(path, newParm, HTTP_TOKEN_OPTIONS).pipe(
       tap(res => {
-        this.tokenService.saveRefreshToken(res.access_token);
+        this.tokenService.saveToken(res.access_token);
       }),
       catchError(SnowflakeService.handleError)
     );
