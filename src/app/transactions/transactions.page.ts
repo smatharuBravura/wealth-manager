@@ -20,7 +20,6 @@ ngOnInit() {
 
   this.transactionService.getLocalData().subscribe(
     (response: any) => {
-      console.log('results::', response.data);
       this.translist = response;
       let someString = "" ;
       let someData =  this.translist.data;
@@ -32,10 +31,8 @@ ngOnInit() {
  
       let jsonData = JSON.parse(someString);
       this.results = jsonData;
-      console.log("Results::::::::::", jsonData);
-      
-
-    });
+      console.log("Results -->:", jsonData);
+          });
 
 
   //this.results = this.dataService.getLocalData().subscribe();

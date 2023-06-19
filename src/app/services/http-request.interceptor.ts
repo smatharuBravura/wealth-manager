@@ -26,13 +26,10 @@ export class HttpRequestInterceptor implements HttpInterceptor {
 		let newRequest = req;
 		
 		const token = this.tokenService.getToken();
-		// const token = 'ver:1-hint:309761631883282-ETMsDgAAAYhKprBCABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEHx9MwOHh+YvoqTHATsPKXcAAABgY/ql+zmpMgs7fA3+W1o0emlnXcHA2nPqExVxW96ePk4hkWVbc0uZdn0rCUXT+oGypho0WsD3R1BUPh/uK5+NyFBs+qwN18KskgogGXS8K/8oOF+2WiVbYy83n+6+NjzHABQJqFsXw3aJ2ftIiJ2BhE5ormD/+w==';
 		const refreshToken = this.tokenService.getRefreshToken();
-		console.log('RequestAPI--->>>', newUrl);
 		let isRequestAPI = newUrl.includes('/api/v2/statements/');
 
 		if (isRequestAPI) {
-			console.log('isRequestAPI--->>>', isRequestAPI);
 			newRequest = req.clone({
 
 				url: environment.apiUrl,
@@ -48,22 +45,15 @@ export class HttpRequestInterceptor implements HttpInterceptor {
 
 		let isAuthRequest = newUrl.includes('oauth/authorize');
 		if (isAuthRequest) {
-			console.log('isAuthRequest--->>>', isAuthRequest);
 			newRequest = req.clone({
 				url: environment.authUrl,
 				
 			})
-			console.log('Request Header --->>>', newRequest.params);
 		}
 
 		let isTokenRequestAPI = newUrl.includes('oauth/token-request');
 		if (isTokenRequestAPI) {
 
-			// let auth = 'Basic : ' +Buffer.from(environment.OAUTH_CLIENT, 'base64').toString('base64');
-			// auth = auth + ':' ;
-			// auth = auth + Buffer.from(environment.OAUTH_SECRET, 'base64').toString('base64');
-
-			console.log('isTokenRequestAPI--->>>', isTokenRequestAPI);
 			// console.log('Add HTTP Header Authorization', auth);
 			newRequest = req.clone({
 				url: environment.tokenUrl, 
@@ -75,7 +65,6 @@ export class HttpRequestInterceptor implements HttpInterceptor {
 			})
 		}
 	
-		console.log('newRequest URl is --->>>', newRequest);
 		return next.handle(newRequest).pipe(
 			map((event: HttpEvent<any>) => {
 				if (event instanceof HttpResponse) {

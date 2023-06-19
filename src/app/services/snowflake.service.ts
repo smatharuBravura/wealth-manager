@@ -32,7 +32,6 @@ const HTTP_TOKEN_OPTIONS = {
 
 export class SnowflakeService {
   private apiUrl = environment.apiUrl;
-  private tokenUrl = environment.tokenUrl;
   private authUrl = environment.authUrl;
 
   public encoder: HttpParameterCodec;
@@ -76,8 +75,8 @@ export class SnowflakeService {
     }));
   }
 
-  getClientHolding(tenant: string, investor: string): Observable<Holding[]> {
-    this.myData.statement = "Call GETCLIENTHOLDINGJSON( '" + tenant.valueOf() + "', '" + investor.valueOf() + "');";
+  getClientHolding( tenant: string,investor: string): Observable<Holding[]> {
+    this.myData.statement = "Call GETCLIENTHOLDINGVIEW( '" + tenant.valueOf() + "', '" + investor.valueOf() + "');";
     return this.httpClient.post<Holding[]>(this.apiUrl, this.myData, HTTP_OPTIONS).pipe(map(data => {
       return data;
     }));
