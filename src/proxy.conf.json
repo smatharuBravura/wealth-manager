@@ -1,6 +1,6 @@
 {
     "/oauth/token-request": {
-        "target": "https://midwinter-bvs_tao.snowflakecomputing.com",
+        "target": "https://fl57652.ap-southeast-2.snowflakecomputing.com",
         "secure": false,
         "changeOrigin": true,
         "logLevel": "debug"
