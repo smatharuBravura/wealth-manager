@@ -10,7 +10,7 @@ export const environment = {
   authUrl: 'https://fl57652.ap-southeast-2.snowflakecomputing.com/oauth/authorize',
   snfDatabase: 'DATAWORX',
   snfSchema: "BABYLON",
-  snfWarehouse: 'DATAMESH',
+  snfWarehouse: 'COMPUTE_WH',
   snfTimeout: '20',
   // Surinder uses these 3 setting
   // OAUTH_CLIENT: 'F+3HwRPalzBYXq7bDcP8rIGhaaY=',
